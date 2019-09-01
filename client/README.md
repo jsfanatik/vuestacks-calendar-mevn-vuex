@@ -39,7 +39,7 @@ The VueStacks calendar MEVN demo utilizes an Axios HTTP client and Express serve
 
 See full component in ```components/Calendar.vue```
 
-# Note regarding Vuex:
+##### Note regarding Vuex:
 
 ```getEvents ()``` is a callback function that dispatches an action in store.js (Vuex store). The action retrieves the inputted event from the database then commits a mutation. State is then updated with the retrieved event. A ```getter ()``` method returns the state to the component (see: ```:events="this.$store.getters.getEvents"``` in Calendar.vue). 
 
