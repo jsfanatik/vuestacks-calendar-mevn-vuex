@@ -28,15 +28,17 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
+![alt text](https://raw.githubusercontent.com/jsfanatik/vuestacks-calendar-vue-vuex-firebase/master/client/src/assets/cal-screen3.jpg)
+
 ### Overview
 
-The VueStacks calendar MEVN demo utilizes an Axios HTTP client and Express server to create and delete calendar events. 
+The VueStacks calendar MEVN demo utilizes an Axios HTTP client and Express server to create and delete calendar events.
 
 See full component in ```components/Calendar.vue```
 
 #### Note regarding Vuex:
 
-```getEvents ()``` is a callback function that dispatches an action in store.js (Vuex store). The action retrieves the inputted event from the database then commits a mutation. State is then updated with the retrieved event. A ```getter ()``` method returns the state to the component (see: ```:events="this.$store.getters.getEvents"``` in Calendar.vue). 
+```getEvents ()``` is a callback function that dispatches an action in store.js (Vuex store). The action retrieves the inputted event from the database then commits a mutation. State is then updated with the retrieved event. A ```getter ()``` method returns the state to the component (see: ```:events="this.$store.getters.getEvents"``` in Calendar.vue).
 
 See ```routes/tasks.js``` to view Express router setup.
 
